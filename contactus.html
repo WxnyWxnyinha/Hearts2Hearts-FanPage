@@ -5,11 +5,10 @@
     <meta name="description" content="Entre em contato com o Hearts2Hearts! Mande uma mensagem para as membros e compartilhe seu amor pelo grupo. Estamos sempre ansiosas para ouvir nossos fãs.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hearts2Hearts (하츠투하츠): Contact</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
-    <!-- Cabeçalho com logo e navegação hamburguer -->
     <header>
         <div class="header-container">
             <a href="index.html" class="logo">
@@ -31,12 +30,12 @@
         </div>
     </header>
 
-    <!-- Seção de formulário de contato -->
     <main>
         <section>
             <h2>Entre em contato com o Hearts2Hearts!</h2>
             <p>Envie sua mensagem, dúvida ou sugestão. Adoramos receber o carinho dos nossos fãs!</p>
-            <form id="contactForm"></form>
+            
+            <form id="contactForm">
                 <label for="name">Nome:</label><br>
                 <input type="text" id="name" name="name" required><br>
 
@@ -56,26 +55,27 @@
             </div>
         </section>
 
-        <!-- Links para redes sociais -->
         <section>
             <h2>Siga-nos</h2>
             <p>Fique por dentro das nossas novidades e lançamentos:</p>
-            <a href="https://www.tiktok.com/@hearts2hearts">TikTok</a>
-            <a href="https://www.instagram.com/hearts2hearts/">Instagram</a>
-            <a href="https://x.com/Hearts2Hearts">X</a>
-            <a href="https://www.youtube.com/@hearts2hearts.official">YouTube</a>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@hearts2hearts">TikTok</a>
+                <a href="https://www.instagram.com/hearts2hearts/">Instagram</a>
+                <a href="https://x.com/Hearts2hearts">X</a>
+                <a href="https://www.youtube.com/@hearts2hearts.official">YouTube</a>
+            </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <p>© 2025 Hearts2Hearts. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="menu.js"></script>
-    <script src="botao.js"></script>
-    <script src="formulario.js"></script>
+    <button id="scroll-to-top-btn" aria-label="Voltar ao Topo da Página">↑</button>
+
+    <script src="script/menu.js"></script>
+    <script src="script/botao.js"></script>
+    <script src="script/formulario.js"></script>
 
 </body>
 </html>

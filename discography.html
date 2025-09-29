@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cabeçalho com logo e navegação hamburguer -->
     <header>
         <div class="header-container">
             <a href="index.html" class="logo">
@@ -30,7 +29,6 @@
         </div>
     </header>
 
-    <!-- Seção de vídeos -->
     <section>
         <h2>Assista ao nosso novo clipe: "Pretty Please"</h2>
         <p>
@@ -60,114 +58,127 @@
         </iframe>
     </section>
 
-    <!-- Seção de outras músicas -->
     <section>
         <h2>Nossa Discografia</h2>
 
-        <!-- Singles -->
         <h3>Singles</h3>
-            <ul class="discography-list">
-                <div class="discography-item">
-                    <img src="img/album1.jpg" alt="Capa do Single The Chase" class="album-cover">
-                    <div class="album-info">
-                        <strong>"The Chase"</strong> <span class="release-date">(24 de fevereiro de 2025)</span>
-                        <ul class="tracklist">
-                            <li>
-                                1. The Chase
-                                <iframe 
-                                    src="https://drive.google.com/file/d/1w5WQTlKlwLMbiGVc0gvGZRirSRDgLZEa/preview" 
-                                    width="100%" 
-                                    height="100" 
-                                    allow="autoplay" 
-                                    frameborder="0" 
-                                    scrolling="no"
-                                    style="border:0"
-                                    title="The Chase - player">
-                                    Seu navegador não suporta o elemento de áudio.
-                                </iframe>
-                            </li>
-                            <li>
-                                2. Butterfly
-                                <iframe 
-                                    src="https://drive.google.com/file/d/1k7AfZsWYJyaQC5U2ks4zLOPM0YTWa2Y_/preview"
-                                    width="100%" 
-                                    height="100" 
-                                    allow="autoplay" 
-                                    frameborder="0" 
-                                    scrolling="no"
-                                    style="border:0"
-                                    title="Butterfly - player">
-                                    Seu navegador não suporta o elemento de áudio.
-                                </iframe>
-                            </li>
-                        </ul>
-                    </div>
+        <ul class="discography-list">
+            <div class="discography-item">
+                <img src="img/album1.jpg" alt="Capa do Single The Chase" class="album-cover">
+                <div class="album-info">
+                    <strong>"The Chase"</strong> <span class="release-date">(24 de fevereiro de 2025)</span>
+                    
+                    <button class="toggle-tracklist-btn" data-target="tracklist-chase">
+                        Mostrar Faixas
+                    </button>
+                    
+                    <ul class="tracklist" id="tracklist-chase" style="display:none;">
+                        <li>
+                            1. The Chase
+                            <iframe 
+                                src="https://drive.google.com/file/d/1w5WQTlKlwLMbiGVc0gvGZRirSRDgLZEa/preview" 
+                                width="100%" 
+                                height="100" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                scrolling="no"
+                                style="border:0"
+                                title="The Chase - player">
+                                Seu navegador não suporta o elemento de áudio.
+                            </iframe>
+                        </li>
+                        <li>
+                            2. Butterfly
+                            <iframe 
+                                src="https://drive.google.com/file/d/1k7AfZsWYJyaQC5U2ks4zLOPM0YTWa2Y_/preview"
+                                width="100%" 
+                                height="100" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                scrolling="no"
+                                style="border:0"
+                                title="Butterfly - player">
+                                Seu navegador não suporta o elemento de áudio.
+                            </iframe>
+                        </li>
+                    </ul>
                 </div>
-                <div class="discography-item">
-                    <img src="img/album2.jpg" alt="Capa do Single STYLE" class="album-cover">
-                    <div class="album-info">
-                        <strong>"STYLE"</strong> <span class="release-date">(17 de junho de 2025)</span>
-                        <ul class="tracklist">
-                            <li>
-                                1. STYLE
-                                <iframe 
-                                    src="https://drive.google.com/file/d/1f9v2q88bFb8PeBn97O1Mks-Xu18OoqnR/preview"
-                                    width="100%" 
-                                    height="100" 
-                                    allow="autoplay" 
-                                    frameborder="0" 
-                                    scrolling="no"
-                                    style="border:0"
-                                    title="STYLE - player">
-                                    Seu navegador não suporta o elemento de áudio.
-                                </iframe>
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="discography-item">
+                <img src="img/album2.jpg" alt="Capa do Single STYLE" class="album-cover">
+                <div class="album-info">
+                    <strong>"STYLE"</strong> <span class="release-date">(17 de junho de 2025)</span>
+                    
+                    <button class="toggle-tracklist-btn" data-target="tracklist-style">
+                        Mostrar Faixas
+                    </button>
+                    
+                    <ul class="tracklist" id="tracklist-style" style="display:none;">
+                        <li>
+                            1. STYLE
+                            <iframe 
+                                src="https://drive.google.com/file/d/1f9v2q88bFb8PeBn97O1Mks-Xu18OoqnR/preview"
+                                width="100%" 
+                                height="100" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                scrolling="no"
+                                style="border:0"
+                                title="STYLE - player">
+                                Seu navegador não suporta o elemento de áudio.
+                            </iframe>
+                        </li>
+                    </ul>
                 </div>
-            </ul>
+            </div>
+        </ul>
 
-        <!-- Mini-Álbuns -->
         <h3>Mini-Álbuns</h3>
-            <ul class="discography-list">
-                <div class="discography-item">
-                    <img src="img/album3.jpg" alt="Capa do Mini-Álbum FOCUS" class="album-cover">
-                    <div class="album-info">
-                        <strong>1st Mini-Álbum: "FOCUS"</strong> <span class="release-date">(20 de outubro de 2025)</span>
-                        <ul class="tracklist">
-                            <li>1. FOCUS <span class="soon">(Em Breve)</span></li>
-                            <li>2. STYLE</li>
-                            <li>
-                                3. Pretty Please
-                                <iframe 
-                                    src="https://drive.google.com/file/d/1K2ES9GWTGoHi3MEWr3QueD5pziJ1GwFS/preview"
-                                    width="100%" 
-                                    height="100" 
-                                    allow="autoplay" 
-                                    frameborder="0" 
-                                    scrolling="no"
-                                    style="border:0"
-                                    title="Pretty Please - player">
-                                    Seu navegador não suporta o elemento de áudio.
-                                </iframe>
-                            </li>
-                            <li>4. ??? <span class="soon">(Em Breve)</span></li>
-                            <li>5. ??? <span class="soon">(Em Breve)</span></li>
-                            <li>6. ??? <span class="soon">(Em Breve)</span></li>
-                        </ul>
-                    </div>
+        <ul class="discography-list">
+            <div class="discography-item">
+                <img src="img/album3.jpg" alt="Capa do Mini-Álbum FOCUS" class="album-cover">
+                <div class="album-info">
+                    <strong>1st Mini-Álbum: "FOCUS"</strong> <span class="release-date">(20 de outubro de 2025)</span>
+                    
+                    <button class="toggle-tracklist-btn" data-target="tracklist-focus">
+                        Mostrar Faixas
+                    </button>
+                    
+                    <ul class="tracklist" id="tracklist-focus" style="display:none;">
+                        <li>1. FOCUS <span class="soon">(Em Breve)</span></li>
+                        <li>2. STYLE</li>
+                        <li>
+                            3. Pretty Please
+                            <iframe 
+                                src="https://drive.google.com/file/d/1K2ES9GWTGoHi3MEWr3QueD5pziJ1GwFS/preview"
+                                width="100%" 
+                                height="100" 
+                                allow="autoplay" 
+                                frameborder="0" 
+                                scrolling="no"
+                                style="border:0"
+                                title="Pretty Please - player">
+                                Seu navegador não suporta o elemento de áudio.
+                            </iframe>
+                        </li>
+                        <li>4. ??? <span class="soon">(Em Breve)</span></li>
+                        <li>5. ??? <span class="soon">(Em Breve)</span></li>
+                        <li>6. ??? <span class="soon">(Em Breve)</span></li>
+                    </ul>
                 </div>
-            </ul>
+            </div>
+        </ul>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <p>© 2025 Hearts2Hearts. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="menu.js"></script>
-    <script src="botao.js"></script>
+    <button id="scroll-to-top-btn" aria-label="Voltar ao Topo da Página">↑</button>
 
+    <script src="script/menu.js"></script>
+    <script src="script/botao.js"></script>
+    <script src="script/discografia.js"></script>
+    
 </body>
 </html>
