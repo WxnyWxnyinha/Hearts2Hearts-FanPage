@@ -36,7 +36,7 @@
         <section>
             <h2>Entre em contato com o Hearts2Hearts!</h2>
             <p>Envie sua mensagem, dúvida ou sugestão. Adoramos receber o carinho dos nossos fãs!</p>
-            <form>
+            <form id="contactForm"></form>
                 <label for="name">Nome:</label><br>
                 <input type="text" id="name" name="name" required><br>
 
@@ -51,6 +51,9 @@
 
                 <input type="submit" value="Enviar">
             </form>
+            <div id="successMessage" style="display:none; color:green; margin-top:10px;">
+                Mensagem enviada com sucesso! Obrigada pelo contato 💖
+            </div>
         </section>
 
         <!-- Links para redes sociais -->
@@ -68,5 +71,11 @@
     <footer>
         <p>© 2025 Hearts2Hearts. Todos os direitos reservados.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="menu.js"></script>
+    <script src="botao.js"></script>
+    <script src="formulario.js"></script>
+
 </body>
 </html>
