@@ -446,39 +446,131 @@ footer {
 
 /* ====== AJUSTES PARA TELAS PEQUENAS (MOBILE) ====== */
 @media (max-width: 768px) {
-
-  /* --- MUDANÇA PRINCIPAL AQUI --- */
+  /* Header */
   .header-container {
-    flex-direction: column; /* Empilha os itens (logo e menu) */
-    gap: 15px;              /* Adiciona um espaço entre a logo e o menu */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 15px;
   }
 
-  /* --- MENU HORIZONTAL ROLÁVEL --- */
-  .menu {
-    width: 100%; /* Faz o menu ocupar toda a largura */
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  .logo img {
+    max-width: 140px;
+    height: auto;
   }
-  
+
+  /* Menu */
   .menu ul {
-    white-space: nowrap;
-    /* Adiciona um preenchimento nas pontas para os links não colarem nas bordas */
-    padding: 0 10px; 
-    justify-content: center; /* Tenta centralizar os links se eles forem poucos */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
   }
 
-  .menu::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .hamburger {
-    display: none;
+  .menu a {
+    font-size: 0.9rem;
+    padding: 6px 12px;
   }
 
-  /* --- AJUSTES GERAIS DE LAYOUT --- */
-  section { margin: 25px 15px; }
-  footer { margin: 30px 15px 15px; border-radius: 22px; }
-  .social-links { flex-wrap: wrap; gap: 10px; }
-  h1 { font-size: 1.8rem; }
-  p { text-align: left; }
+  /* Seções */
+  section {
+    margin: 25px 15px;
+    padding: 20px;
+  }
+
+  /* Imagem da primeira seção */
+  main > section:first-of-type img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+
+  /* Membros */
+  .members {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .member {
+    background: #f9fbff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px;
+  }
+
+  .member img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Botão voltar ao topo */
+  #scroll-to-top-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  /* Redes sociais */
+  .social-links {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  /* Formulários */
+  form input,
+  form textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  form input[type="submit"] {
+    padding: 10px;
+  }
+
+  /* Texto */
+  p {
+    text-align: left;
+  }
+
+  /* Rodapé */
+  footer {
+    margin: 30px 15px 15px;
+    border-radius: 22px;
+  }
+
+  .rodape {
+    font-size: 0.85rem;
+  }
+
+  /* Discografia */
+  .discography-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .album-cover {
+    width: 150px;
+    height: 150px;
+  }
+
+  .album-info {
+    margin-top: 10px;
+  }
+
+  /* Vídeos */
+  .video-container iframe {
+    height: 300px;
+  }
+
+  /* Player de música na tracklist */
+  .tracklist li iframe {
+    width: 100%;
+    height: 100px;
+  }
 }
