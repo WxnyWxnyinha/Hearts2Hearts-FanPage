@@ -139,6 +139,7 @@ main>section:first-of-type img:hover {
   padding: 2px;
   background: linear-gradient(135deg, var(--azul-bebe), var(--azul-pastel), var(--lilas-pastel));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
   pointer-events: none;
