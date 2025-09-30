@@ -39,6 +39,12 @@ header {
   justify-content: space-between;
 }
 
+.logo img {
+  max-width: 180px;  /* Ajuste este valor para o tamanho ideal da sua logo */
+  height: auto;      /* Mantém a proporção da imagem ao diminuir a largura */
+  display: block;    /* Remove possíveis espaços em branco abaixo da imagem */
+}
+
 /* ====== MENU ====== */
 .menu ul {
   list-style: none;
@@ -61,44 +67,6 @@ header {
 .menu a:hover {
   background: var(--azul-bebe);
   box-shadow: 0 0 15px var(--azul-pastel);
-}
-
-/* ====== HAMBURGER ====== */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 26px;
-  height: 3px;
-  background: var(--texto);
-  border-radius: 3px;
-  transition: 0.3s;
-}
-
-@media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-    background: var(--branco-transparente);
-    padding: 22px;
-    border-radius: 16px;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    box-shadow: 0 0 18px var(--sombra);
-  }
-  .menu.open {
-    display: flex;
-  }
-  .hamburger {
-    display: flex;
-  }
 }
 
 /* ====== SEÇÕES ====== */
@@ -474,4 +442,43 @@ footer {
   font-size: 0.9rem;
   color: var(--texto);
   text-align: center;
+}
+
+/* ====== AJUSTES PARA TELAS PEQUENAS (MOBILE) ====== */
+@media (max-width: 768px) {
+
+  /* --- MUDANÇA PRINCIPAL AQUI --- */
+  .header-container {
+    flex-direction: column; /* Empilha os itens (logo e menu) */
+    gap: 15px;              /* Adiciona um espaço entre a logo e o menu */
+  }
+
+  /* --- MENU HORIZONTAL ROLÁVEL --- */
+  .menu {
+    width: 100%; /* Faz o menu ocupar toda a largura */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .menu ul {
+    white-space: nowrap;
+    /* Adiciona um preenchimento nas pontas para os links não colarem nas bordas */
+    padding: 0 10px; 
+    justify-content: center; /* Tenta centralizar os links se eles forem poucos */
+  }
+
+  .menu::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+
+  /* --- AJUSTES GERAIS DE LAYOUT --- */
+  section { margin: 25px 15px; }
+  footer { margin: 30px 15px 15px; border-radius: 22px; }
+  .social-links { flex-wrap: wrap; gap: 10px; }
+  h1 { font-size: 1.8rem; }
+  p { text-align: left; }
 }
